@@ -49,9 +49,9 @@ class Directory extends Component {
   render() {
     return (
       <div className='directory-menu'>
-        { // section was destructured to {title, imageUrl, id}
-          this.state.sections.map(({ title, imageUrl, id }) => (
-            <MenuItem key={id} title={title} imageUrl={imageUrl}/>
+        { // section was destructured to {title, imageUrl, id, size}
+          this.state.sections.map(({ title, imageUrl, id, size }) => (
+            <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
           ))}
       </div>
     );
