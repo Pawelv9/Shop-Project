@@ -10,6 +10,9 @@
   top: 90px;
   right: 40px;
   z-index: 5;
+  ::-webkit-scrollbar { 
+    display: none; 
+  }
 
   .cart-items {
     height: 240px;
