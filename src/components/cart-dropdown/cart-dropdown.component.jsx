@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
-import { withRouter } from 'react-router-dom';
+import { selectCartItems } from '../../redux/cart/cart.selectors';
+import { cartItemHidden } from '../../redux/cart/cart.actions.js'
 
 import './cart-dropdown.styles.scss';
-import { selectCartItems } from '../../redux/cart/cart.selectors';
 
 const CartDropdown = ({ cartItems, history }) => (
   <div className='cart-dropdown'>
