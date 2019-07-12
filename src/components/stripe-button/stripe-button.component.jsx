@@ -25,6 +25,6 @@ const StripeCheckoutButton = ({ price }) => {
       stripeKey = {publishableKey}
     />
   )
-}
+};
 
 export default StripeCheckoutButton;
