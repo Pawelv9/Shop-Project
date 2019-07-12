@@ -1,10 +1,11 @@
+import 'dotenv/config'
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 // import keys from '../../keys'
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = process.env.STRIPE_KEY;
+  const publishableKey = process.env.REACT_APP_STRIPE_KEY;
   
   const onToken = token => {
     console.log(token);
