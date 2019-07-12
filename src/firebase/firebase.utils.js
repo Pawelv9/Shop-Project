@@ -1,16 +1,16 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-import keys from '../keys'
+// import keys from '../keys'
 
   const config = {
-    apiKey: keys.API_KEY,
-    authDomain: keys.AUTH_DOMAIN,
-    databaseURL: keys.DATABASE_URL,
-    projectId: keys.PROJECT_ID,
-    storageBucket: keys.STORAGE_BUCKET,
-    messagingSenderId: keys.MESSAGING_SENDER_ID,
-    appId: keys.APP_ID
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID
 }
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
