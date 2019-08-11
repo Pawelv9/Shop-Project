@@ -33,14 +33,18 @@
   &:last-child {
     margin-left: 7.5px;
   }
-  
+
   .background-image {
     width: 100%;
     height: 100%;
     background-size: cover; 
     background-position: center;
   }
-
+  
+  @media screen and (max-width: 800px) {
+    height: 380px;
+  }
+  
   .content {
     height: 90px;
     padding: 0 25px;
